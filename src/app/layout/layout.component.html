@@ -20,3 +20,13 @@
 <ng-template #noName>
   <p>No name. Insert a name.</p>
 </ng-template>
+
+<hr/>
+
+<ul>
+  <ng-container *ngFor="let fruit of fruits">
+    <li *ngIf="fruit">
+      {{fruit}}
+    </li>
+  </ng-container>
+</ul>

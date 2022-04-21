@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class LayoutComponent implements OnInit {
 
   txt: string = '';
-  
+
+  fruits: string[] = ['Apple', '', 'Orange', 'Pear', '', 'Pineapple', 'Strawberry', 'Grape', ''];
+
   constructor() { }
 
   ngOnInit(): void {
