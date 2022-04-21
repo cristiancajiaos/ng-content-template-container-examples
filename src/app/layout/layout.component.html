@@ -9,3 +9,14 @@
     Warning
   </div>
 </app-warning>
+
+<hr/>
+
+<input [(ngModel)]="txt" placeholder="Insert name"/>
+
+<div *ngIf="txt; else noName">
+  <h2>Hello, {{txt}}!</h2>
+</div>
+<ng-template #noName>
+  <p>No name. Insert a name.</p>
+</ng-template>
